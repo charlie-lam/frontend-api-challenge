@@ -4,11 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <title>My web page</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <title>Chitter</title>
   </head>
   <body>
-    <h1>Show</h1>
+    <header>
+      <h1 id="web-title">Chitter</h1>
+      <nav id="nav">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="main-container">
+      <div id="sign-up-and-login">
+        <h2>Sign up to see all new peeps</h2>
+        <form id="sign-up-form">
+            <label for="handle-input">Handle:</label>
+            <input id="handle-input" type="text" value="" placeholder="e.g MakersFan"/>
+            <label for="password-input">Password:</label>
+            <input id="password-input" type="password" value=""/>
+            <input type="submit" value="Sign up"/>
+        </form>
+        <h2>Login to post new peeps</h2>
+        <form id="login-form">
+            <label for="handle-input">Handle:</label>
+            <input id="handle-input" type="text" value="" placeholder="e.g MakersFan"/>
+            <label for="password-input">Password:</label>
+            <input id="password-input" type="password" value=""/>
+            <input type="submit" value="Login"/>
+        </form>
+    </div>
+      <!--iframe id="sign-up-and-login-html" src=""></iframe -->
+    </div>
     <script type="text/javascript" src="bundle.js"></script>
   </body>
 </html>
